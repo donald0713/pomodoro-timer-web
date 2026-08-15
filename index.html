@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="app">
+    <button class="settings-btn" type="button" aria-label="설정" onclick="location.href='setting.html'">⚙️</button>
+
+    <h1>pomodoro</h1>
+
+    <div class="mode-label" id="mode-label">집중</div>
+    <div class="time-display" id="time-display">25:00</div>
+
+    <div class="controls">
+      <button class="btn btn-start" type="button" onclick="startTimer()">시작</button>
+      <button class="btn btn-stop" type="button" onclick="stopTimer()">정지</button>
+      <button class="btn btn-reset" type="button" onclick="resetTimer()">초기화</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

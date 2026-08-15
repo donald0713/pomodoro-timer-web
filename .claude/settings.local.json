@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Start-Process \"D:\\\\webdev\\\\2.pomodoro\\\\index.html\")",
+      "PowerShell(Start-Process \"D:\\\\webdev\\\\2.pomodoro\\\\setting.html\")"
+    ]
+  }
+}
