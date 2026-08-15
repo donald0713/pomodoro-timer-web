@@ -50,6 +50,14 @@ h1 {
   text-transform: uppercase;
 }
 
+.current-time {
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #9b8ab0;
+  font-variant-numeric: tabular-nums;
+}
+
 .mode-label {
   margin-top: 24px;
   font-size: 13px;

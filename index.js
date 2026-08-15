@@ -73,5 +73,16 @@ function resetTimer() {
   updateDisplay();
 }
 
+function updateCurrentTime() {
+  const now = new Date();
+  const hours = String(now.getHours()).padStart(2, "0");
+  const minutes = String(now.getMinutes()).padStart(2, "0");
+  const seconds = String(now.getSeconds()).padStart(2, "0");
+  const clock = document.getElementById("current-time");
+  if (clock) clock.textContent = `${hours}:${minutes}:${seconds}`;
+}
+
 updateModeLabel();
 updateDisplay();
+updateCurrentTime();
+setInterval(updateCurrentTime, 1000);
